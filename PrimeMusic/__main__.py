@@ -28,7 +28,7 @@ async def init():
         and not config.STRING9
         and not config.STRING10
     ):
-        LOGGER("PrimeMusic").error(
+        LOGGER("Arab X Robot").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
@@ -36,7 +36,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("PrimeMusic").warning(
+        LOGGER("Arab X Robot").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
     try:
@@ -64,14 +64,14 @@ async def init():
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("PrimeMusic").error(
+        LOGGER("Arab X Robot").error(
             "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
         )
         sys.exit()
     except:
         pass
     await Prime.decorators()
-    LOGGER("PrimeMusic").info("Prime Music Bot Started Successfully")
+    LOGGER("Arab X Robot").info("Prime Music Bot Started Successfully")
     await idle()
 
 
